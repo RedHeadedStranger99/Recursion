@@ -43,7 +43,8 @@ void wordBreakUtil(string str, int n, string result) {
 	}
 	// Otherwise, continue check the sentence for valid words. 
 	wordBreakUtil(str.substr(i, n-i), n-i, result + prefix + " ");
-     }
+      }
+   }
 }
 
 int main() {
