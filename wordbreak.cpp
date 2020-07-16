@@ -33,7 +33,7 @@ void wordBreakUtil(string str, int n, string result) {
       string prefix = str.substr(0, i);
 
       // If this is a valid word, add it to our potential sentence.
-      if (contains(prefix)) {
+      if (dictionary.contains(prefix)) {
       // If no elements remain, print the sentence. 
       	if (i == n) {
 	// Add the current element to previous word. 
