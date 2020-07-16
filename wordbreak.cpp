@@ -35,11 +35,11 @@ void wordBreakUtil(string str, int n, string result) {
       // If this is a valid word, add it to our potential sentence.
       if (contains(prefix)) {
       // If no elements remain, print the sentence. 
-	if (i == n) {
-	  // Add the current element to previous word. 
-	  result += prefix;
-	  cout << result << endl;
-	  return;
+      	if (i == n) {
+	// Add the current element to previous word. 
+		result += prefix;
+		cout << result << endl;
+		return;
 	}
 	// Otherwise, continue check the sentence for valid words. 
 	wordBreakUtil(str.substr(i, n-i), n-i, result + prefix + " ");
