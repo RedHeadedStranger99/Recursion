@@ -40,7 +40,7 @@ void wordBreakUtil(string str, int n, string result) {
 		result += prefix;
 		cout << result << endl;
 		return;
-         }
+        }
 	// Otherwise, continue check the sentence for valid words. 
         wordBreakUtil(str.substr(i, n-i), n-i, result + prefix + " ");
       }
