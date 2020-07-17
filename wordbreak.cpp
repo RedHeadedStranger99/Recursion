@@ -1,5 +1,5 @@
 /* @author FIRSTNAME LASTNAME
- * @filename wordbreak.c
+ * @filename wordbreak.cpp
  * @date 7/13/2020
  * @description Given a sentence without any spaces between the 
  * words, this program finds all possible ways to break up the 
@@ -44,7 +44,7 @@ void wordBreakUtil(string str, int n, string result) {
 	// Otherwise, continue check the sentence for valid words. 
 	wordBreakUtil(str.substr(i, n-i), n-i, result + prefix + " ");
       }
-   }
+  }
 }
 
 int main() {
