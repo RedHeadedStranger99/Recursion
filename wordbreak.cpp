@@ -34,9 +34,9 @@ void wordBreakUtil(string str, int n, string result) {
 
       // If this is a valid word, add it to our potential sentence.
       if (dictionary.contains(prefix)) {
-      // If no elements remain, print the sentence. 
+        // If no elements remain, print the sentence. 
       	if (i == n) {
-	// Add the current element to previous word. 
+	        // Add the current element to previous word. 
 	        result += prefix;
 	        cout << result << endl;
 	        return;
